@@ -6,7 +6,7 @@ const HomeScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <View>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>HomeScreen</Text>
       <TouchableOpacity onPress={() => navigation.navigate("Search")}>
         <Text>Go to Search Demo</Text>
