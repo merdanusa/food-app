@@ -1,10 +1,17 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { Text, View } from "react-native";
+import { Button, Text, View } from "react-native";
 
 const SearchScreen = () => {
+  const navigation = useNavigation();
+
   return (
     <View>
       <Text>SearchScreen</Text>
+      <Button
+        onPress={() => navigation.push("Search")}
+        title="Go to Details... again"
+      />
     </View>
   );
 };
