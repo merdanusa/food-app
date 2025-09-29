@@ -8,10 +8,7 @@ const SearchScreen = () => {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>SearchScreen</Text>
-      <Button
-        onPress={() => navigation.push("Search")}
-        title="Go to Details... again"
-      />
+      <Button onPress={() => navigation.navigate("Home")} title="Go to Home" />
     </View>
   );
 };
