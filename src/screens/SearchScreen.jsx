@@ -1,16 +1,16 @@
-import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { Button, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import SearchBar from "../components/UI/SearchBar";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 const SearchScreen = () => {
-  const navigation = useNavigation();
-
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>SearchScreen</Text>
-      <Button onPress={() => navigation.navigate("Home")} title="Go to Home" />
+    <View>
+      <SearchBar />
     </View>
   );
 };
+
+const styles = StyleSheet.create({});
 
 export default SearchScreen;
